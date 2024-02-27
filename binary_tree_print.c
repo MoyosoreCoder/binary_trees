@@ -15,7 +15,7 @@
  *
  * Return: length of printed tree after process
  */
-static int print_t(const binary_tree_t *tree, int offset, int depth, chat **s)
+static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 {
 	char b[6];
 	int width, left, right, is_left, i;
@@ -24,7 +24,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, chat **s)
 		return (0);
 	is_left = (tree->parent && tree->parent->left == tree);
 	width = sprintf(b, "(%03d)", tree->n);
-	left = print_t(tree->left offset, depth + 1, s);
+	left = print_t(tree->left, offset, depth + 1, s);
 	right = print_t(tree->right, offset + left + width, depth + 1, s);
 	for (i = 0; i < width; i++)
 		s[depth][offset + left + i] = b[i];
