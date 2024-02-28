@@ -1,7 +1,10 @@
 #include "binary_trees.h"
 /**
+ * binary_tree_is_full - checks if binary is full
+ * @tree: the pointer to the binary tree elements
  *
  *
+ * Return: 1 if full, 0 if if truee is NULL
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
