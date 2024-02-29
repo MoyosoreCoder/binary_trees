@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 unsigned char true_leaf(const binary_tree_t *node);
 size_t calculate_depth(const binary_tree_t *tree);
 const binary_tree_t *search_leaf(const binary_tree_t *tree);
