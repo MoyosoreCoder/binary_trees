@@ -23,7 +23,7 @@ size_t calculate_b_tree_height(const binary_tree_t *tree)
  * binary_tree_balance - function that self balance
  * @tree: pointer to the binary tree contents
  *
- * Return: Balnced factor or 0 if the tree is NULL
+ * Return: Balanced factor or 0 if the tree is NULL
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
