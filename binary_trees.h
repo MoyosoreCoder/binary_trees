@@ -109,5 +109,4 @@ int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
 int is_bst(const binary_tree_t *tree, int min, int max);
-
 #endif /*_BINARY_TREES_H_*/
