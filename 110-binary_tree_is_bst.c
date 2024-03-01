@@ -8,9 +8,6 @@
  */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
-	if (tree == NULL)
-		return (0);
-
 	return (is_bst(tree, INT_MIN, INT_MAX));
 }
 
@@ -25,7 +22,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 int is_bst(const binary_tree_t *tree, int min, int max)
 {
 	int left, right;
-	
+
 	if (tree == NULL)
 		return (1);
 
